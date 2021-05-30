@@ -1,0 +1,130 @@
+/* intuitivnejsi box-sizing */
+html {
+  box-sizing: border-box;
+}
+*,
+::after,
+::before {
+  box-sizing: inherit;
+}
+
+body {
+  text-rendering: optimizeLegibility;
+}
+
+/*
+ BARVY
+ svetle sede pozadi      #f5f5f5
+ tmavsi seda             #959595
+ barevny prechod nahore  #06d7c1
+ barevny prechod dole    #50cc49
+ zelena cara             #06d7c1
+ oranzova                #f15f42
+
+ PISMO
+ Rubik - pouzite rezy pisma regular 400 a medium 500
+ https://fonts.google.com/specimen/Rubik
+*/
+
+/* ----- zde zacni psat vlastni css ----- */
+body {
+    font-family: 'Rubik', sans-serif;
+    background-color: #959595;
+}
+  
+  .zbozi {
+    width: 670px;
+    min-height: 440px;
+    margin: 0 auto;
+    display: flex;
+}
+  
+.vizual,
+.detaily {
+    width: 50%;
+    padding: 30px;
+}
+  
+  .vizual {
+    background: linear-gradient(#06d7c1, #50cc49);
+    color: white;
+    position: relative;
+    flex-direction: column;
+    display: flex;
+    border-radius: 10px 0 0 10px;
+}
+  
+  .slogan {
+    font-size: 16px;
+    font-weight: 500;
+    flex-grow: 1; 
+}
+  .bota {
+    position: absolute;
+    bottom: 10px;
+    right: 2px;
+}
+  .cenovka {
+    text-align: right;
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+}
+  .cena {
+    font-size: 28px;
+    font-weight: 500;
+}
+  .zaruka {
+    font-size: 12px;
+    font-weight: 400;
+}
+  .detaily {
+    background-color: #f5f5f5;
+    border-radius: 0 10px 10px 0px;
+}
+  .nazev {
+    font-size: 20px;
+    font-weight: 500;
+    padding-bottom: -50px;
+}
+  .produkt {
+    color: #959595;
+    padding-bottom: 0px;
+    margin: auto;
+  }
+.popis {
+    font-size: 15px;
+}
+  .parametr {
+    border-top: 1px solid #06d7c1;
+    padding-top: 20px;
+}
+  .velikosti {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+  li {
+      padding: 10px;
+}
+
+.cislo38 {
+      border: 1px solid #f15f42;
+     border-radius: 50%;
+      padding: 10px
+}
+.akce {
+  width: 150px;  
+  background-color: #f15f42;  
+  border-radius: 5px;
+  text-align: center;
+  line-height: 3rem;
+}  
+.tlacitko {
+    text-align: center;
+    font-size: 15px;
+    text-decoration: none;
+    color: #f5f5f5;
+}
